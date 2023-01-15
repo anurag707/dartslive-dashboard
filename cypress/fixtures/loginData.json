@@ -1,0 +1,9 @@
+{
+    "username" : "admin",
+    "password" : "123456",
+    "errorLblUsername" : "username は必須項目です。",
+    "errorLblPassword" : "password は必須項目です。",
+    "invalidUsername" : "admine",
+    "invalidPassword" : "111111",
+    "errorMsg" : "The provided credentials do not match our records."
+}

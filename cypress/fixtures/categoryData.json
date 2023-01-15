@@ -1,0 +1,28 @@
+{
+    "titleJP" : "title jp は必須項目です。",
+    "titleEN" : "title en は必須項目です。",
+    "descriptionJP" : "description jp は必須項目です。",
+    "descriptionEN" : "description en は必須項目です。",
+    "priority" : "priority は必須項目です。",
+    "txtCategory" : "カテゴリー",
+    "txtAddCategoryTitle" : "カテゴリー追加", 
+    "txtEditCategoryTitle" : "カテゴリー編集",
+    "txtSubmit" : "送信",
+    "txtCancel" : "キャンセル",
+    "inputTitleJP" : "This is Japanese title",
+    "inputTitleEN" : "This is english title",
+    "inputDescriptionJP" : "This is japanese description",
+    "inputDescriptionEN" : "This is english description",
+    "txtShowInMenuNo" : "いいえ",
+    "txtSelectStatusNo" : "無効",
+    "priorityValue" : "4",
+
+    "upinputTitleJP" : "This is Japanese Updated title",
+    "upinputTitleEN" : "This is english Updated title",
+    "upinputDescriptionJP" : "This is japanese updated description",
+    "upinputDescriptionEN" : "This is english updated description",
+    "txtShowInMenuYes" : "はい",
+    "txtSelectStatusYes" : "有効",
+    "uppriorityValue" : "2",
+    "txtSuccess" : "カテゴリが削除されます。"
+}

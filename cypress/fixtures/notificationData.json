@@ -1,0 +1,17 @@
+{
+    "msgJP" : "message jp は必須項目です。",
+    "msgEN" : "message en は必須項目です。",
+    "txtNoti" : "お知らせ",
+    "txtAddNoti" : "通知を追加",
+    "txtCancel" : "キャンセル",
+    "inputNotiJP" : "This is Japanese Notification title",
+    "inputNotiEN" : "This is English Notification title",
+    "notiType" : "Emergency",
+    
+    "editNoti" : "通知の編集",
+    "upNotiJP" : "Update Japanese Notification title",
+    "upNotiEN" : "Update English Notification title",
+    "successMsg" : "通知が削除されました。",
+    "verifyData" : "一致するレコードがありません",
+    "okDelete" : "確認"
+}

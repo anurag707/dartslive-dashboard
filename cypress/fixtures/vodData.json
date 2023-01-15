@@ -1,0 +1,23 @@
+{
+    "vod" : "ビデオ",
+    "addVideo" : "新しい ビデオを追加",
+    "vodSubmit" : "送信",
+    "vodTitleJP" : "This is Japanese Vod title",
+    "vodTitleEN" : "This is English Vod title",
+    "vodDescJP" : "This is japanese Vod description",
+    "vodDescEN" : "This is english Vod description",
+    "vodPurchase" : "Premium",
+    "vodStatus" : "InActive",
+
+    "editVodTitle" : "ビデオを編集する",
+    "upVodTitleJP" : "Update This is Japanese Vod title",
+    "upVodTitleEN" : "Update This is English Vod title",
+    "upVodDescJP" : "Update This is japanese Vod description",
+    "upVodDescEN" : "Update This is english Vod description",
+    "upVodPurchase" : "standard",
+    "upVodStatus" : "Active",
+
+    "confirmMsg" : "ビデオは削除されます。",
+    "confirmDel" : "確認",
+    "successMsg" : "一致するレコードがありません"
+}

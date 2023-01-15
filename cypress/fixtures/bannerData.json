@@ -1,0 +1,14 @@
+{
+    "titleJP" : "This is Japanese Banner title",
+    "titleEN" : "This is English Banner title",
+    "titleBanner" : "バナー",
+    "addBanner" : "バナーを追加",
+    "logo" : "logo は必須項目です。",
+    "editBanner" : "バナーを編集する",
+
+    "uptitleJP" : "This is Japanese Updated Banner title",
+    "uptitleEN" : "This is English Updated Banner title", 
+    "successMsg" : "バナーは削除されます。",
+    "okDelete" : "確認"
+
+}

@@ -1,6 +1,16 @@
 /// <reference types="cypress" />
+import Login from "../PageObjects/1LoginPage"
 
 describe('Login Module Test', () => {
+
+let loginData;
+const ln = new Login();
+
+    before(() => {
+        cy.fixture('loginData.json').then((data) => {
+          loginData = data;
+        })
+    })
 
     beforeEach(() => {
         cy.visit('https://api.dev.dartslive.tv/admin/login')
@@ -8,42 +18,45 @@ describe('Login Module Test', () => {
     })
 
     it('Test Error message, When email and password fields are blank', () => {
-        cy.get('button').contains('Sign In').click()
-        cy.get('li').first().should('have.text', 'username は必須項目です。')
-        cy.get('li').last().should('have.text', 'password は必須項目です。')
+
+        ln.clickSubmit()
+        cy.get('li').first().should('have.text', loginData.errorLblUsername)
+        cy.get('li').last().should('have.text', loginData.errorLblPassword)
     })
 
 
     it('Test for valid email and blank password field', () => {
-        cy.get('input[name="username"]').type('admin')
-        cy.get('button').contains('Sign In').click()
-        cy.get('li').last().should('have.text', 'password は必須項目です。')
+        
+        ln.setUserName(loginData.username)
+        ln.clickSubmit()
+        cy.get('li').last().should('have.text', loginData.errorLblPassword)
     })
 
 
     it('Test for blank email field and valid password entered', () => {
-        cy.get('input[name="password"]').type('123456')
-        cy.get('button').contains('Sign In').click()
-        cy.get('li').first().should('have.text', 'username は必須項目です。')
+        
+        ln.setPassword(loginData.password)
+        ln.clickSubmit()
+        cy.get('li').first().should('have.text', loginData.errorLblUsername)
 
     })
 
     it('Test for Invalid Credentials entered', () => {
-        cy.get('input[name="username"]').type('admin')
-        cy.get('input[name="password"]').type('123456333')
-        cy.get('button').contains('Sign In').click()
-        cy.get('li').first().should('have.text', 'The provided credentials do not match our records.')
+        
+        ln.setUserName(loginData.invalidUsername)
+        ln.setPassword(loginData.invalidPassword)
+        ln.clickSubmit()
+        cy.get('li').first().should('have.text', loginData.errorMsg)
 
     })
 
     it('Test for Valid Credentials entered', () => {
-        cy.get('input[name="username"]').type('admin')
-        cy.get('input[name="password"]').type('123456')
-        cy.get('button').contains('Sign In').click()
-        cy.get('span').contains('Admin').click()
-        cy.get('a').contains('Sign out').should('be.visible').click()
-
-
+        
+        ln.setUserName(loginData.username)
+        ln.setPassword(loginData.password)
+        ln.clickSubmit()
+        ln.verifyLogin()
+    
     })
 
 })

@@ -1,0 +1,34 @@
+{
+    "txtLiveEvent" : "ライブイベント",
+    "txtAddLiveEvent" : "ライブイベントを追加",
+    "txtEditLiveEvent" : "ライブ イベントの編集",
+    "txtStreamURL" : "stream url は必須項目です。",
+    "txtStartTime" : "start time は必須項目です。",
+    "txtCoverImage" : "cover image は必須項目です。",
+    "txtThumbnail" : "thumbnail は必須項目です。",
+    "txtLiveTitleJP" : "LIVE Event Automation Japanese title",
+    "txtLiveTitleEN" : "LIVE Event Automation English title",
+    "txtLiveDescJP" : "This is japanese description from Cypress Automation",
+    "txtLiveDescEN" : "This is english description from Cypress Automation",
+    "txtStreamValue" : "https://test.com",
+    "txtVideoType" : "wms",
+    "txtLiveStatus" : "InActive",
+    "txtLivePurchase" : "trial",
+    "txtStartValue" : "2022-12-22T08:30",
+    "txtEndValue" : "2023-02-10T12:10",
+    "txtCategoryValue" : "PDJ",
+    "txtEditCategoryValue" : "The world online",
+
+    "uptxtLiveTitleJP" : "UPDATE LIVE Event  Japanese title",
+    "uptxtLiveTitleEN" : "UPDATE LIVE Event  English title",
+    "uptxtLiveDescJP" : "UPDATE This is japanese description from Cypress Automation",
+    "uptxtStreamValue" : "https://updatetest.com",
+    "uptxtVideoType" : "youtube",
+    "uptxtLiveStatus" : "Active",
+    "uptxtLivePurchase" : "Premium",
+    "uptxtStartValue" : "2023-02-10T12:10",
+
+    "successMsg" : "ライブイベントが削除されました。"
+
+
+}
