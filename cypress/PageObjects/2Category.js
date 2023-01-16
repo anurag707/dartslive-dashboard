@@ -21,7 +21,7 @@ class Category{
     addMoreCoupon = '.btn-primary'
     displayaddedData = 'tbody > tr'
     verifiedData = 'td'
-    txtEditPriority = 'input[placeholder="優先を入力してください"]'
+    txtEditPriority = 'input[placeholder=" crud.enter_priority"]'
     txtLogo = '#logo_img'
     txtAlertCancel = '.swal2-cancel'
     txtAlertConfirm = '.swal2-confirm'
