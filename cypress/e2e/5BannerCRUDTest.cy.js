@@ -29,7 +29,7 @@ const banner = new Banner
     })
 
     beforeEach(() => {
-        cy.login('admin', '123456')
+        cy.login('username', 'pass')
     })
 
     it('Test to CREATE Banner', () => {

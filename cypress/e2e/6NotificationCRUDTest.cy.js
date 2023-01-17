@@ -14,7 +14,7 @@ const noti = new Notification
     })
 
     beforeEach(() => {
-        cy.login('admin', '123456')
+        cy.login('username', 'pass')
     })
 
     it('To Test CREATE Notification', () => {

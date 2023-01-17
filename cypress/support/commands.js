@@ -25,7 +25,7 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 Cypress.Commands.add('login', (email, password) => {
-    cy.visit('https://api.dev.dartslive.tv/admin/login')
+    cy.visit('url')
     cy.wait(2000)
     cy.get('input[name="username"]').type(email)
     cy.get('input[name="password"]').type(password)

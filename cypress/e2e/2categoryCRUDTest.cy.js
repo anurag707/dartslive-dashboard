@@ -12,7 +12,7 @@ const cat = new Category();
     })
 
     beforeEach(() => {
-        cy.login('admin', '123456')
+        cy.login('username', 'pass')
     })
 
     it('Test to CREATE Category', () => {

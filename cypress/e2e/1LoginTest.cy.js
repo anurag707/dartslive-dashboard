@@ -13,7 +13,7 @@ const ln = new Login();
     })
 
     beforeEach(() => {
-        cy.visit('https://api.dev.dartslive.tv/admin/login')
+        cy.visit('url')
         // cy.viewport(1440, 900)
     })
 

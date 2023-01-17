@@ -18,7 +18,7 @@ const live = new LiveEvent();
     })
 
     beforeEach(() => {
-        cy.login('admin', '123456')
+        cy.login('username', 'pass')
     })
 
     it('To test CREATE feature of live Events', () => {
