@@ -1,6 +1,4 @@
 {
-    "username" : "*****",
-    "password" : "**********",
     "errorLblUsername" : "username は必須項目です。",
     "errorLblPassword" : "password は必須項目です。",
     "invalidUsername" : "admine",

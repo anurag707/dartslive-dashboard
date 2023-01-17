@@ -12,7 +12,7 @@ const cat = new Category();
     })
 
     beforeEach(() => {
-        cy.login('username', 'pass')
+        cy.login(Cypress.env('username'), Cypress.env('password'))
     })
 
     it('Test to CREATE Category', () => {

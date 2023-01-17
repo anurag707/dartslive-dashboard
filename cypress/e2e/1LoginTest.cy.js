@@ -1,8 +1,9 @@
 /// <reference types="cypress" />
 import Login from "../PageObjects/1LoginPage"
 
-describe('Login Module Test', () => {
 
+
+describe('Login Module Test', () => {
 let loginData;
 const ln = new Login();
 
@@ -13,7 +14,7 @@ const ln = new Login();
     })
 
     beforeEach(() => {
-        cy.visit('url')
+        cy.visit(Cypress.env('url'))
         // cy.viewport(1440, 900)
     })
 
@@ -27,7 +28,7 @@ const ln = new Login();
 
     it('Test for valid email and blank password field', () => {
         
-        ln.setUserName(loginData.username)
+        ln.setUserName(Cypress.env('username'))
         ln.clickSubmit()
         cy.get('li').last().should('have.text', loginData.errorLblPassword)
     })
@@ -35,7 +36,7 @@ const ln = new Login();
 
     it('Test for blank email field and valid password entered', () => {
         
-        ln.setPassword(loginData.password)
+        ln.setPassword(Cypress.env('password'))
         ln.clickSubmit()
         cy.get('li').first().should('have.text', loginData.errorLblUsername)
 
@@ -52,8 +53,8 @@ const ln = new Login();
 
     it('Test for Valid Credentials entered', () => {
         
-        ln.setUserName(loginData.username)
-        ln.setPassword(loginData.password)
+        ln.setUserName(Cypress.env('username'))
+        ln.setPassword(Cypress.env('password'))
         ln.clickSubmit()
         ln.verifyLogin()
     

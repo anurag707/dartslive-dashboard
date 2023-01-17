@@ -25,8 +25,8 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 Cypress.Commands.add('login', (email, password) => {
-    cy.visit('url')
-    cy.wait(2000)
+    cy.visit(Cypress.env('url'))
+    cy.wait(4000)
     cy.get('input[name="username"]').type(email)
     cy.get('input[name="password"]').type(password)
     //cy.get('button').contains('Sign In').click()

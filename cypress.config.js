@@ -28,7 +28,11 @@ module.exports = defineConfig({
       //screenshotOnRunFailure=true;
     },
     
-  }
+  },
+  env: {
+
+    sudan:"testing"
+  },
     
 
 });

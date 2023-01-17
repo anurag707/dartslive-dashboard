@@ -24,7 +24,7 @@ const vod = new VOD();
     })
 
     beforeEach(() => {
-        cy.login('username', 'pass')
+        cy.login(Cypress.env('username'), Cypress.env('password'))
     })
 
     it('Test to CREATE VOD', () => {

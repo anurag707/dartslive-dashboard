@@ -18,7 +18,7 @@ const live = new LiveEvent();
     })
 
     beforeEach(() => {
-        cy.login('username', 'pass')
+        cy.login(Cypress.env('username'), Cypress.env('password'))
     })
 
     it('To test CREATE feature of live Events', () => {

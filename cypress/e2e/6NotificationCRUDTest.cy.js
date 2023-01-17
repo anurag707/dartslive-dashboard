@@ -14,7 +14,7 @@ const noti = new Notification
     })
 
     beforeEach(() => {
-        cy.login('username', 'pass')
+        cy.login(Cypress.env('username'), Cypress.env('password'))
     })
 
     it('To Test CREATE Notification', () => {

@@ -10,7 +10,7 @@
     "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots cypress/videos cypress/reports || true",
     "allure:report": "allure generate allure-results --clean -o allure-report && allure open",
     "allure:history": "mv -f allure-report/history allure-results/history && rm -r allure-report || true",
-    "report" : "npm run allure:report"
+    "report": "npm run allure:report"
   },
   "author": "Sunil Yadav and Anurag Gupta",
   "license": "ISC",
@@ -20,5 +20,8 @@
     "cypress": "^11.2.0",
     "cypress-mochawesome-reporter": "^3.2.3",
     "node-xlsx": "^0.21.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
   }
 }
